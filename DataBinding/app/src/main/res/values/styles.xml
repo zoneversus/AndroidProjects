@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.NavigationViewBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/whiteColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="ToolbarDesactivados" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+    <style name="AparienciaTextoTitulo" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+
+</resources>

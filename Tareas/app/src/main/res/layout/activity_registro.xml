@@ -1,0 +1,176 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/tool"
+            layout="@layout/toolbar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/usuario_solid_blue"
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/hint_nombre"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawablePadding="10dp"
+                android:textSize="22sp"
+                android:background="@drawable/nombre_profile"
+                app:validateMinLength="@{3}"
+                app:validateMaxLength="@{30}"
+                validateEmpty="@{true}"
+               />
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/arroba"
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/hint_email"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawablePadding="10dp"
+                android:textSize="22sp"
+                android:background="@drawable/nombre_profile"
+                app:validateMinLength="@{5}"
+                app:validateMaxLength="@{30}"
+                validateEmpty="@{true}"
+                app:validateType='@{"email"}'
+                app:validateTypeMessage="@{@string/badEmail}"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@drawable/eye_solid_profile"
+                app:passwordToggleEnabled="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="22sp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                >
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_pass"
+                    android:background="@drawable/nombre_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="20dp"
+                    app:validateMinLength="@{5}"
+                    validateEmpty="@{true}"
+                    android:textSize="22sp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@drawable/eye_solid_profile"
+                app:passwordToggleEnabled="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="22sp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                >
+
+                <EditText
+                    android:id="@+id/etPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_passConfirm"
+                    android:background="@drawable/nombre_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="20dp"
+                    app:validateMinLength="@{5}"
+                    validateEmpty="@{true}"
+                    android:textSize="22sp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <CheckBox
+        android:id="@+id/cbAcepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:textColor="@color/blueLight"
+        android:textColorHighlight="@color/blueLight"
+        android:textStyle="bold" />
+           <TextView
+               android:id="@+id/tvTerminos"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="87dp"
+               android:layout_marginLeft="5dp"
+               android:text="@string/terminos"
+               android:textColor="@color/blueLight"
+               android:onClick="@{(v) -> clickListener.onClick(v)}"/>
+</LinearLayout>
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/registro"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/tv_registrar"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:onClick="@{(v) -> clickListener.onClick(v)}"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

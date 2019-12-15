@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Cognitus News</string>
+    <string name="login">Ingresar</string>
+    <string name="hintMail">Correo electronico</string>
+    <string name="hintPassword">Contraseña</string>
+
+    <string name="news">Noticias</string>
+
+    <string name="products">Productos</string>
+
+    <string name="about">Acerca de</string>
+    <string name="acept">Aceptar</string>
+    <string name="hintUser">Usuario</string>
+
+    <string name="contact">Contacto</string>
+    <string name="send">Enviar</string>
+    <string name="willBeContacted">Sera contactado en breve</string>
+    <string name="IniciarSesion">Iniciar sesión</string>
+    <string name="close">Cerrar</string>
+    <string name="txt_titulonews">Noticias </string>
+    <string name="txt_tituloProd">Productos </string>
+    <string name="txt_compartir">Compartir</string>
+    <string name="titulo_compartir">Compartir mediante</string>
+    <string name="mensaje_contacto">Gracias por enviarnos sus comentarios</string>
+    <string name="mensaje_compartir">Hey mira esta noticia</string>
+
+
+    <string name="ws_url_login">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=</string>
+    <string name="ws_url">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=getNews</string>
+    <string name="ws_url_prod">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=getProductos</string>
+
+    <string name="ws_url_prodOrder">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=setProdOrder</string>
+    <string name="ws_url_acerca">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=getNosotros</string>
+
+    <string name="ws_url_contacto">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=getContacto</string>
+    <string name="img_url">http://35.155.161.8:8080/WSExample/</string>
+
+
+    <string name="sample">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+
+</resources>

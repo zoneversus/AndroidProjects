@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".activities.NoticiaDetalle">
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Las noticias de hoy"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:paddingRight="20dp"
+                android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="$55.00 MXN"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="25dp"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+            <Button
+                android:id="@+id/pedido"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/boton_compras"
+                android:layout_gravity="center_vertical"
+
+                />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/pBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/colorNoticiaDetalle"
+            android:text="@string/sample"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:failureImage="@drawable/ic_image_error"
+        app:failureImageScaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderImage="@drawable/ic_image_placeholder"
+        app:placeholderImageScaleType="center" />
+
+    <ImageView
+        android:id="@+id/fab_capture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_add_a_photo_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

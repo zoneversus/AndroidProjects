@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+
+    <CheckBox
+        android:id="@+id/cbIsDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="9"/>
+
+    <TextView
+        android:id="@+id/tvReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_weight="6"/>
+    <TextView
+    android:id="@+id/tvReportDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:layout_weight="7"/>
+
+    <ImageView
+        android:id="@+id/iVDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:layout_marginRight="3dp"
+        android:layout_weight="9"/>
+
+</LinearLayout>

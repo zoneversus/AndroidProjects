@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a4a65</color>
+    <color name="colorPrimaryDark">#1a4a65</color>
+    <color name="colorAccent">#44546a</color>
+    <color name="colorBlueWords">#44546a</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHint">#848484</color>
+    <color name="colorNoticiaDetalle">#373737</color>
+    <color name="colorBackgroundMenu">#1a4a65</color>
+
+</resources>

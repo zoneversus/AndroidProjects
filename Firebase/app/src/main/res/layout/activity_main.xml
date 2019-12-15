@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="titulo"
+            type="String" />
+        <variable
+            name="mensaje"
+            type="String" />
+        <variable
+            name="datos"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:title="@string/app_name"
+            android:background="@color/colorPrimary"
+            app:titleTextAppearance="@style/AparienciaTextoTitulo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:hint="Sin Titulo"
+            android:textColor="@android:color/black"
+            tools:text="@{titulo}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:hint="Sin Mensaje"
+            tools:text="@{mensaje}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:hint="Sin Datos"
+            tools:text="@{datos}"/>
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRUEBA"/>
+
+    </LinearLayout>
+
+</layout>
+

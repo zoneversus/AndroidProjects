@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:src="@drawable/cognituslogo"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:paddingLeft="50px"
+            android:drawablePadding="50px"
+            android:hint="@string/hintMail"
+            android:drawableLeft="@drawable/baseline_person_outline_black_24"></EditText>
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:inputType="textPassword"
+            android:drawablePadding="50px"
+            android:paddingLeft="50px"
+            android:hint="@string/hintPassword"
+            android:drawableLeft="@drawable/baseline_lock_black_24"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:background="@color/colorBlue"
+        android:textColor="@color/colorWhite"
+        />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Audio Store Checador</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="btn_recuperar">Recuperar contraseña</string>
+    <string name="btn_iniciar">Iniciar sesion</string>
+    <string name="recuperar">Recuperar contraseña</string>
+    <string name="registrar">Registrarme</string>
+    <string name="registro">Registro</string>
+    <string name="hint_apellido_p">Apellido paterno</string>
+    <string name="hint_apellido_m">Apellido materno</string>
+    <string name="hint_repetir">Repetir contraseña</string>
+
+    //Menu
+    <string name="menu_reportes">Reportes</string>
+    <string name="menu_signature">Check-in</string>
+    <string name="menu_products">Productos</string>
+    <string name="menu_profile">Perfil</string>
+
+    //Notes
+    <string name="btn_add">Agregar</string>
+    <string name="hint_report">Escriba el Reporte</string>
+    <string name="hint_fecha">  /  /  </string>
+
+    //Signature
+    <string name="name">Nombre del empleado</string>
+    <string name="limpia">Limpiar firma</string>
+    <string name="guarda">Guardar Firma</string>
+
+    //urls
+    <string name="ws_url_login">http://35.155.161.8:8080/WSExample/</string>
+
+    //update perfil
+    <string name="profile">Mi perfil</string>
+    <string name="update">Actualizar perfil</string>
+
+    //proudcts list
+    <string name="txt_tituloProd">Productos</string>
+</resources>

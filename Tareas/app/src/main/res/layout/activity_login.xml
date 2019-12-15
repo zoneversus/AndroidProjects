@@ -1,0 +1,137 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/Bienvenido"
+                    android:textColor="@android:color/white"
+                    android:textSize="36sp"
+                    android:layout_below="@id/logo"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="30dp"
+                android:paddingRight="30dp"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/usuario_solid"
+               android:paddingLeft="40dp"
+                android:hint="@string/hint_usuario"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:drawablePadding="24dp"
+                android:textSize="22sp"
+                android:background="@drawable/usuario"
+                app:validateMinLength="@{5}"
+                app:validateMaxLength="@{30}"
+                validateEmpty="@{true}"
+                app:validateType='@{"email"}'
+                app:validateTypeMessage="@{@string/badEmail}"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleDrawable="@drawable/eye_solid"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@android:color/white"
+                    app:passwordToggleTint="@android:color/white"
+                    >
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_pass"
+                        android:background="@drawable/usuario"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword"
+                        android:paddingRight="30dp"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:padding="20dp"
+                        app:validateMinLength="@{5}"
+                        validateEmpty="@{true}"
+                        android:textSize="22sp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="25dp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/tvOlvide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_olvidar"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:onClick="@{(v) -> clickListener.onClick(v)}"/>
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/iniciar"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/btn_iniciar"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="@{(v) -> clickListener.onClick(v)}"
+                    />
+                <TextView
+                    android:id="@+id/tvReguistrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="@string/tv_registrar"
+                    android:layout_marginTop="20dp"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:onClick="@{(v) -> clickListener.onClick(v)}"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</layout>

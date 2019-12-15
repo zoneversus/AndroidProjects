@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Noticias cognitus</string>
+    <string name="login">Ingresar</string>
+    <string name="hintMail">Correo electronico</string>
+    <string name="hintPassword">Contraseña</string>
+
+    <string name="news">Noticias</string>
+
+    <string name="products">Productos</string>
+
+    <string name="about">Acerca de</string>
+
+    <string name="contact">Contacto</string>
+    <string name="close">Cerrar</string>
+    <string name="titulo_casa">Casas</string>
+    <string name="txt_compartir">Compartir</string>
+    <string name="titulo_compartir">Compartir mediante</string>
+    <string name="msj_compartir">Me gustaria que vieras esto.</string>
+
+    <string name="ws_url_login">http://35.155.161.8:8080/WSExample/DataWS?ApiCall=</string>
+</resources>

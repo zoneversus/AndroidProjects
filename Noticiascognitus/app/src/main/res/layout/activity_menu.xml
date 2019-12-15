@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Menu">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/cognituslogo"
+        />
+    <TextView
+        android:id="@+id/tvwUser"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text=""/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/noticiasLayout"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginRight="100px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_menu_book_black_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/news"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_work_black_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/products"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginRight="100px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/baseline_info_black_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_phone_callback_black_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="200px"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        app:srcCompat="@drawable/outline_exit_to_app_black_24" />
+
+</LinearLayout>

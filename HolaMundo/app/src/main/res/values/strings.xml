@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HolaMundo</string>
+    <string name="mensaje">Hola esto es una prueba</string>
+    <string name="hint">Usuario</string>
+</resources>

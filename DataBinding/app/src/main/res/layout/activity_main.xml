@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <include
+            android:id="@+id/barraP"
+            layout="@layout/toolbar" />
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/app_name"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:hint="Nombre"
+            app:validateMinLength="@{4}"
+            app:validateMaxLength="@{10}"
+            validateEmpty="@{true}"
+            app:validateEmptyMessage="@{@string/emptyMessage}"/>
+        <EditText
+            android:id="@+id/regex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre 2"
+            app:validateRegex='@{"[a-zA-Z0-9-._]+"}'
+            app:validateRegexMessage="@{@string/regexErrorMessage}" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:hint="Correo"
+            app:validateMinLength="@{8}"
+            app:validateMaxLength="@{25}"
+            validateEmpty="@{true}"
+            app:validateType='@{"email"}'
+            app:validateTypeMessage="@{@string/badEmail}"/>
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:hint="Fecha de nacimiento"
+            app:validateDate='@{"dd/MM/yyyy"}'
+            app:validateDateMessage="@{@string/dateErrorMessage}"
+            app:validateDateAutoDismiss="@{true}" />
+        <Button
+            android:id="@+id/btnEva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{(v) -> clickListener.onClick(v)}"
+            android:text="Evaluar"/>
+
+    </LinearLayout>
+</layout>

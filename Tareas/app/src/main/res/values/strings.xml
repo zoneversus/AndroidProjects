@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Tareas</string>
+    <string name="quickstart_message">Click the SUBSCRIBE TO WEATHER button below to subscribe to the
+        weather topic. Messages sent to the weather topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.</string>
+    <string name="subscribe_to_weather">Subscribe To Weather</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to weather topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="Bienvenido">Bienvenido</string>
+
+    <string name="hint_pass">Contraseña</string>
+
+    <string name="hint_passActual">Contraseña actual</string>
+    <string name="hint_passNueva">Nueva Contraseña</string>
+    <string name="tv_olvidar">Olvide contraseña</string>
+    <string name="btn_iniciar">Iniciar</string>
+
+    <string name="tv_registrar">Registrar</string>
+    <string name="btn_recuperar">Recuperar</string>
+
+    <string name="btn_confirmar">Confirmar</string>
+    <string name="btn_guardar">Guardar</string>
+
+    <string name="btn_guardar_cambios">Guardar Cambios</string>
+    <string name="btn_terminar">Terminar</string>
+
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_hora">Hora de entrada</string>
+    <string name="hint_horas">Horas trabajadas</string>
+    <string name="hint_notas">Notas</string>
+    <string name="hint_passConfirm">Confirma contraseña</string>
+    <string name="terminos"><u>Acepto terminos y condiciones</u></string>
+
+    <string name="badEmail">Ingrese un correo valido</string>
+    <string name="text_dummy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</string>
+    <string name="url_service">http://35.155.161.8:8080/WSExample/</string>
+</resources>

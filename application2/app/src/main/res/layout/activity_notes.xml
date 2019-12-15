@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:id="@+id/rlAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/etReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_report"
+            android:layout_toStartOf="@id/etDateReport"
+            android:layout_alignParentStart="true"/>
+        <EditText
+            android:id="@+id/etDateReport"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="/    /"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:layout_toStartOf="@id/btnAddReport"
+           />
+        <Button
+            android:id="@+id/btnAddReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/btn_add"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlAddTask"/>
+</RelativeLayout>
+
+

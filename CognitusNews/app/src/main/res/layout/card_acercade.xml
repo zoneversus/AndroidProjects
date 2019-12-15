@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:elevation="4dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivAcercaFoto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDescAcercade"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:padding="10dp"
+                    android:justificationMode="inter_word"
+                    android:gravity="center_vertical"
+                    android:text="Lorem ipsum dolor sit amet"
+                    android:textSize="18sp"
+                    />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

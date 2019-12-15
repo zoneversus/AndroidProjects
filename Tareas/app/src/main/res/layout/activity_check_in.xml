@@ -1,0 +1,65 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/tool"
+            layout="@layout/toolbar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:clickable="false"
+                android:id="@+id/etNombre"
+                android:inputType="none"
+                android:focusable="false"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/reloj_blue"
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/hint_hora"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawablePadding="10dp"
+                android:textSize="22sp"
+                android:background="@drawable/nombre_profile"
+                />
+            <com.github.gcacace.signaturepad.views.SignaturePad
+                android:id="@+id/signaturePad"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:penColor="@color/colorPrimaryDark"
+                android:background="@drawable/rectangulo_mensaje"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registro"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/btn_confirmar"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+</layout>

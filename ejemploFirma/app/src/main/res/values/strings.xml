@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ejemploFirma</string>
+
+    <string name="name">Nombre del empleado</string>
+    <string name="limpia">Limpiar firma</string>
+    <string name="guarda">Guardar Firma</string>
+
+</resources>

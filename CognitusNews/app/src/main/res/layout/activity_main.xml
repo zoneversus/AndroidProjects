@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity"
+    android:background="@drawable/fondo_2">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/IniciarSesion"
+    android:textColor="@color/colorBlueWords"
+    android:textSize="24sp"
+    android:layout_marginTop="230sp"
+    android:layout_marginLeft="35sp"
+    ></TextView>
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingLeft="50px"
+        android:drawablePadding="50px"
+        android:hint="@string/hintMail"
+        android:drawableLeft="@drawable/usuario_icon"
+        android:background="@drawable/usuario"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"></EditText>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleDrawable="@drawable/eye"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="8dp"
+        app:passwordToggleTint="@color/colorBackgroundMenu"
+        >
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintPassword"
+            android:background="@drawable/usuario"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/iniciar"
+        android:textColor="@color/colorWhite"
+        />
+</LinearLayout>
