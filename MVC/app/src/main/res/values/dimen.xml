@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Titulo_Generar">18sp</dimen>
+    <dimen name="Titulo_Subtitulo">14sp</dimen>
+    <dimen name="Titulo_Contenido">10sp</dimen>
+    <dimen name="Titulo_Registro">24sp</dimen>
+</resources>

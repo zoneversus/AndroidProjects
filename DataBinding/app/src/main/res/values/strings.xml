@@ -1,8 +1,3 @@
 <resources>
-    <string name="app_name">DataBinding</string>
-    <string name="emptyMessage">No puede estar vacio</string>
-    <string name="badEmail">Debe usar un correo valido</string>
-    <string name="dateErrorMessage">Fecha Invalida</string>
-    <string name="regexErrorMessage">Debe escribir un nombre valido</string>
-
+    <string name="app_name">Databinding</string>
 </resources>
